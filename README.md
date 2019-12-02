@@ -1,4 +1,1 @@
-# createhtpassword
-# mavenpipelineopenshift
-# petspringdocker
 # petspringdocker
