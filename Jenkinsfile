@@ -20,7 +20,7 @@ node("maven") {
              }
             stage('Code Quality Using SonarQube') {
               withSonarQubeEnv('SonarQube') { 
-                sh "mvn sonar:sonar -Dsonar.host.url=http://sonarqube-sonarqubeanalysis.apps.ocppilot.ocpcontainer.com/ -DskipTests=true"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://sonarqube-sonarqube.apps.ocppilot.ocpcontainer.com/ -DskipTests=true"
               }
             }
             stage("Deploy to DeveloperSandBox") {
