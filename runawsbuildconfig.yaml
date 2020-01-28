@@ -3,7 +3,7 @@
 
   tasks:
     - name: login to openshift on AWS 
-      command: oc login https://api.ocppilot.ocpcontainer.com:6443 -u kubeadmin -p Ux3pP-duiiJ-uxNAb-k6fui 
+      command: oc login https://api.ocppilot.ocpcontainer.com:6443 -u kubeadmin -p Ux3pP-duiiJ-uxNAb-k6fui --insecure-skip-tls-verify
     - name: accessing the project 
       command: oc project dockerspringpetclinic
     - name: run the build 
