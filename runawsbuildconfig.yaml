@@ -7,4 +7,4 @@
     - name: accessing the project 
       command: oc project dockerspringpetclinic
     - name: run the build 
-      command: oc start-build docker-petspring-pipeline
+      command: oc start-build dockerspringpetclinic1
