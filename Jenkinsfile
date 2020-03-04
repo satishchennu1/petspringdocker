@@ -10,7 +10,7 @@ node("maven") {
             stage('Build Image'){
               openshift.withCluster(){
                 openshift.withProject(){
-                  sh "oc start-build dockerspringpetclinic --from-dir . --follow"  
+                  sh "oc start-build petclinic-pipeline --from-dir . --follow"  
                 }
               }
             }
